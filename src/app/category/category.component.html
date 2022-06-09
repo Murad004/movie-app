@@ -1,0 +1,10 @@
+<div #divv class="list-group">
+  <a
+    #a
+    *ngFor="let c of categories"
+    href=""
+    class="list-group-item list-group-item-action"
+    (click)="ChangeSelect(divv, a.style)"
+    >{{ c.name }}</a
+  >
+</div>
